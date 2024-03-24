@@ -52,7 +52,7 @@
 // }
 // if (!flag) {
 //   alert("your city not qualified for psl");
-// }
+// }      
 
 // var pslteam = [
 //   "karachi king",
@@ -94,3 +94,22 @@
 //   }
 //   console.log(userInp, targetNum);
 // }
+
+
+
+var userinp = prompt('Enter your city');
+var arr = ['karachi','lahore','islamabad','peshawar','multan'];
+var flag = false;
+var i;
+for (i=0; i < arr.length; i++){
+    // console.log(arr[i]);
+    if(arr[i].includes(userinp)){
+        flag = true;
+        break;
+    }
+}
+if (flag){
+    console.log('Mil gya');
+}else{
+    console.log('Nhi mila');
+}
